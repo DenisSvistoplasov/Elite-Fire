@@ -1,0 +1,704 @@
+@font-face
+  font-family: 'Roboto'
+  font-display: swap
+  src: url('../fonts/Roboto-Thin.woff2') format('woff2'), url('../fonts/Roboto-Thin.woff') format('woff')
+  font-weight: 100
+@font-face
+  font-family: 'Roboto'
+  font-display: swap
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'), url('../fonts/Roboto-Light.woff') format('woff')
+  font-weight: 300
+@font-face
+  font-family: 'Roboto'
+  font-display: swap
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff')
+  font-weight: 400
+@font-face
+  font-family: 'Roboto'
+  font-display: swap
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto-Medium.woff') format('woff')
+  font-weight: 500
+@font-face
+  font-family: 'Roboto'
+  font-display: swap
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto-Bold.woff') format('woff')
+  font-weight: 700
+
+
+  // My default 
+*
+  box-sizing: border-box
+ul,li
+  margin: 0
+  padding: 0
+  list-style: none
+h1,h2,h3,h4,h5,h6,p
+  margin: 0
+button
+  padding: 0
+  border: none
+  color: inherit
+  background-color: transparent
+  cursor: pointer
+a
+  color: inherit
+  text-decoration: none
+svg
+  display: block
+fieldset 
+  margin: 0
+  padding: 0
+  border: none
+
+
+//Reuse
+.container
+  // max-width: 1194px
+  max-width: 1294px
+  margin: 0 auto
+  padding: 0 50px
+.section-title
+  font-size: 40px
+  letter-spacing: 0.07em
+  font-weight: 300
+  text-transform: uppercase
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+
+
+
+body
+  font-family: 'Roboto', sans-serif
+  line-height: 1
+  color: #fff
+  background-color: #1a1a1a
+
+.header
+  padding: 85px 0
+  color: #fff
+.header__container
+  display: flex
+  align-items: center
+  // padding: 0 123px
+.brand
+  font-size: 20px
+  font-weight: 400
+  letter-spacing: 0.105em
+  text-transform: uppercase
+.header__brand
+  margin-right: 39px
+.header__description
+  margin-right: auto
+  font-size: 12px
+  line-height: 1.5
+  color: #6D6D6D
+  letter-spacing: 0.05em
+.header__nav
+  margin-right: 60px
+.header-nav__list
+  display: flex
+  align-items: center
+  gap: 45px
+.header-nav__link
+  font-size: 13px
+  color: #949494
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  font-weight: 400
+.header__call-btn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 50px
+  height: 50px
+  border-radius: 2px
+  background: linear-gradient(45deg, #FEA769, #FFDEAB)
+
+
+
+
+
+
+//HERO
+.hero
+  min-height: 430px
+  padding: 9px 0
+  background-image: url('../images/hero/hero.webp'), url('../images/hero/hero_light.svg')
+  background-repeat: no-repeat
+  background-position: right 123px top, right 65px top -40px
+  background-size: auto, 801px 380px
+.hero__title
+  max-width: 780px
+  margin-bottom: 30px
+  font-size: 64px
+  line-height: 1.25
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  background: linear-gradient(190deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+.hero__price
+  margin-bottom: 86px
+  font-size: 36px
+  line-height: 40px
+  font: 300px
+  letter-spacing: 0.05em
+  color: #FFCF7A
+.hero__price-from
+  font-size: 18px
+.hero__advantages
+  display: flex
+  gap: 80px
+.hero__advantage
+  max-width: 112px
+  text-align: center
+.hero__advantage-icon
+  margin: 0 auto 15px
+.hero__advantage-text
+  font-size: 14px
+  line-height: 22px
+  color: #fff
+
+
+// ADVANTAGES
+.advantages
+  padding-top: 220px
+  padding-bottom: 100px
+  background-image: url('../images/advantages/kamin.webp'), url('../images/advantages/light.svg')
+  background-repeat: no-repeat
+  background-position: center top 410px, center
+.advantages__title
+  max-width: 680px
+  margin: 0 auto 21px
+  line-height: 1.5
+  text-align: center
+  background: linear-gradient(190deg, #FFFFFF 31.8%, rgba(255, 255, 255, 0) 87.73%)
+  -webkit-background-clip: text
+.advantages__subtitle
+  margin: 0 auto 480px
+  max-width: 580px
+  font-size: 20px
+  line-height: 33px
+  font-weight: 300
+  letter-spacing: 0.03em
+  text-align: center
+.advantages__list
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 950px
+  margin: 0 auto
+.advantages__item
+  display: flex
+  align-items: center
+  min-height: 50px
+  max-width: 267px
+  padding-left: 80px
+  font-size: 16px
+  line-height: 1.5
+  font-weight: 300
+  background-repeat: no-repeat
+.advantages__item_flame
+  background-image: url('../images/advantages/fire-icon.svg')
+.advantages__item_fuel
+  background-image: url('../images/advantages/drop-icon.svg')
+.advantages__item_clear
+  background-image: url('../images/advantages/cross-icon.svg')
+
+
+
+// REFUELING
+.refueling
+  position: relative
+  padding-top: 130px
+  padding-bottom: 170px
+  background-image: url('../images/refueling/ring.svg'), url('../images/refueling/ring.svg'), url('../images/refueling/light.svg'), url('../images/refueling/fuel-tank.webp')
+  background-repeat: no-repeat
+  background-position: right 349px top 393px, right 529px top 335px, right top -100px, right 10px center
+  background-size: 244px 244px, auto, auto, auto
+.refueling__title
+  margin-bottom: 23px
+  line-height: 55px
+  background: linear-gradient(196.62deg, #FFFFFF 82.79%, rgba(255, 255, 255, 0) 98.2%)
+  -webkit-background-clip: text
+.refueling__text
+  max-width: 370px
+  margin-bottom: 87px
+  font-size: 18px
+  line-height: 33px
+  font-weight: 100
+.refueling__instruction
+  position: relative
+  max-width: 234px
+  margin: 0 auto
+  padding-top: 39px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  background-image: url('../images/refueling/hose.svg'), url('../images/refueling/power.svg')
+  background-repeat: no-repeat
+  background-position: 0 0, left 89px top
+  &::before
+    content: ''
+    position: absolute
+    top: 10px
+    left: 41px
+    width: 31px
+    height: 1px
+    background-color: #949494
+.refueling__tip
+  position: absolute
+  top: 183px
+  right: 227px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 151px
+  height: 151px
+  border-radius: 100%
+  color: #000
+  text-align: center
+  background: radial-gradient(100% 65.98% at 100% 73.18%, #FFFFFF 0.31%, #FFE2A4 59.23%, #FFD47C 100%)
+.refueling__tip-time
+  margin-bottom: 7px
+  font-weight: 700
+  font-size: 16px
+  line-height: 22px
+.refueling__tip-time-digits
+  font-size: 48px
+  line-height: 1
+.refueling__tip-text
+  font-size: 10px
+  line-height: 14px
+
+
+
+// SMART
+.smart
+  position: relative
+  padding-bottom: 558px
+  background: url('../images/smart/smart-kamin.webp') no-repeat center
+.smart__container
+.smart__title
+  position: relative
+  margin-bottom: 40px
+  text-align: center
+  background: linear-gradient(190.29deg, #FFFFFF 35.25%, rgba(255, 255, 255, 0) 104.81%)
+  -webkit-background-clip: text
+  background-clip: text
+  &::before
+    content: ''
+    position: absolute
+    left: 49%
+    top: 50%
+    width: 40px
+    height: 1px
+    background-color: #949494
+  pre
+    margin: 0
+    font-family: inherit
+.smart__subtitle
+  text-align: center
+  font-size: 20px
+  line-height: 33px
+  font-weight: 300
+.smart__speaker-name
+  position: absolute
+  top: 59%
+  font-size: 14px
+  color: #464239
+.smart__speaker-name_alisa
+  left: 311px
+  font-weight: 500
+.smart__speaker-name_xiaomi
+  right: 279px
+  font-weight: 700
+
+
+
+
+// PROPERTIES
+.properties
+.properties__container
+  display: grid
+  grid-template-columns: 47.15% 47.15%
+  column-gap: 68px
+  row-gap: 115px
+.properties__basic-properties
+.basic-properties
+  padding-top: 44px
+.basic-properties__title
+  margin-bottom: 25px
+  font-size: 24px
+  line-height: 1.5
+  font-weight: 400
+  letter-spacing: 0.02em
+.basic-properties__faceplate
+  margin: 0 0 40px
+.faceplate_description
+  position: relative
+  width: fit-content
+  margin-bottom: 19px
+  border-bottom: 1px solid rgba(255, 207, 122, 0.72)
+  font-size: 14px
+  line-height: 36px
+  &::after
+    content: ''
+    position: absolute
+    top: 100%
+    left: 100%
+    width: 56px
+    height: 1px
+    background-color: rgba(255, 207, 122, 0.72)
+    transform-origin: 0 0
+    transform: rotate(58deg)
+
+.properties-list
+.properties__list:not(:last-child)
+  margin-bottom: 80px
+.properties-list__title
+  margin-bottom: 20px
+  font-size: 18px
+  font-weight: 400
+  color: #757575
+.properties-list__inner
+  display: grid
+  grid-template-columns: 230px auto
+  gap: 15px
+.properties-list__item
+  font-size: 14px
+
+.variants
+.variants__title
+  margin-bottom: 25px
+  font-size: 24px
+  line-height: 40px
+  font-weight: 400
+  letter-spacing: 0.02em
+.variants__text
+  margin-bottom: 40px
+  font-size: 14px
+  line-height: 26.5px
+.variants-slider
+  width: 100%
+  aspect-ratio: 537/346
+  background-color: #121212
+.variants-slider__slide
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 26px
+  text-transform: uppercase
+.slider-btn
+  top: unset
+  bottom: 45px
+  width: fit-content
+  height: fit-content
+  margin: 0
+  color: #FFCF7A
+  &::after
+    font-size: 18px
+.variants-slider__button_prev
+  left: 44px
+.variants-slider__button_next
+  left: 78px
+
+
+
+
+
+// CATALOG
+.catalog
+  padding: 113px 0 137px
+  background: url('../images/catalog/light.svg') no-repeat 45% 68% / 20%
+.catalog__container
+.catalog__title
+  margin-bottom: 42px
+  font-size: 30px
+  font-weight: 300
+  text-align: center
+.catalog__link
+  display: block
+  width: fit-content
+  margin: 0 auto
+  padding: 21px 64px
+  border-radius: 1px
+  color: #121212
+  font-size: 18px
+  font-weight: 500
+  text-align: center
+  background: url('../images/btn-light.svg') no-repeat #ECCF94
+
+
+// QUESTION-ANSWER
+.question-answer
+  margin-bottom: 100px
+.question-answer-block
+  &:first-child
+    margin-bottom: 90px
+.question-answer-block__title
+  margin-bottom: 50px
+  line-height: 65px
+  text-align: center
+  background: linear-gradient(210.07deg, #FFFFFF 36.17%, rgba(255, 255, 255, 0) 97.71%)
+  -webkit-background-clip: text
+  background-clip: text
+.question-answer-block__images
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  column-gap: 42px
+.question-answer-block_img
+  aspect-ratio: 370/267
+  background-color: #121212
+
+
+// CUSTOMIZATION
+.customization
+  margin-bottom: 100px
+.customization__container
+.customization__title
+  margin-bottom: 75px
+  text-align: center
+  background: linear-gradient(190.41deg, #FFFFFF 28.47%, rgba(255, 255, 255, 0.18) 91.88%)
+  -webkit-background-clip: text
+  background-clip: text
+.customization__inner
+  display: grid
+  grid-template-columns: 533px auto
+  column-gap: 85px
+.customization__preview-img
+  margin-bottom: 90px
+  border-radius: 3px
+.customization__preview-properties
+  display: flex
+  column-gap: 175px
+.customization__preview-length
+  min-width: 70px
+.customization__preview-length-title, .customization__preview-color-title
+  margin-bottom: 25px
+  color: rgba(255, 255, 255, 0.5)
+  font-size: 12px
+  font-weight: 500
+  letter-spacing: 0.135em
+  text-transform: uppercase
+.customization__preview-length-value
+  font-size: 24px
+.customization__preview-color-value
+  width: 28px
+  height: 28px
+  border-radius: 50%
+  background-color: #B8542A
+
+.customization-field:not(:last-of-type)
+  margin-bottom: 35px
+.customization-field__legend
+  margin-bottom: 23px
+  color: rgba(255, 255, 255, 0.5)
+  font-size: 10px
+  font-weight: 500
+  letter-spacing: 0.2em
+  text-transform: uppercase
+
+.range-length
+  display: flex
+  align-items: center
+  gap: 40px
+  min-height: 30px
+  font-size: 18px
+  font-weight: 500
+.range-length__input
+  position: absolute
+  z-index: -10
+  width: 0
+  height: 0
+  opacity: 0
+.range-length__custom-range
+  position: relative
+  flex-grow: 1
+  height: 2px
+  background-color: #646464
+.custom-range__filled
+  height: 100%
+  width: 40%
+  background-color: #FFCF7A
+.custom-range__thumb
+  position: absolute
+  top: 50%
+  left: 0%
+  width: 30px
+  height: 30px
+  border-radius: 2px
+  background-color: #FFCF7A
+  transform: translate(-50%, -50%)
+
+
+.slider-outer
+  position: relative
+  width: fit-content
+  margin-bottom: 19px
+.form-faceplate-slider
+  width: 250px
+  margin: 0 36px
+.form-faceplate-slider__slide-img
+  width: 247px
+  height: 59px
+  object-fit: cover
+  object-position: bottom
+.form-faceplate-slider__btn
+  top: 50%
+  bottom: unset
+  transform: translateY(-50%)
+.form-faceplate-slider__btn_prev
+  left: 0
+.form-faceplate-slider__btn_next
+  right: 0
+.form-faceplate-slider__pagination.swiper-pagination
+  top: calc(100% + 12px)
+  bottom: unset
+  line-height: 1px
+  .swiper-pagination-bullet
+    width: 9px
+    height: 1px
+    border-radius: 0
+    background-color: #464239
+    opacity: 1
+  .swiper-pagination-bullet-active 
+    opacity: 1
+    background: #FFCF7A
+
+.customization-form__extra-features
+  margin-bottom: 83px
+.customization-form__extra-features-inner
+  display: grid
+  grid-template-columns: 1fr 1fr
+  column-gap: 100px
+  row-gap: 8px
+.extra-feature
+  display: flex
+  justify-content: space-between
+  font-size: 14px
+  font-weight: 500
+  cursor: pointer
+.extra-feature__checkbox
+  position: absolute
+  z-index: -10
+  width: 0
+  height: 0
+  opacity: 0
+.extra-feature__custom-checkbox
+  position: relative
+  flex: 0 0 20px
+  height: 20px
+  border: 1px solid #CEB787
+  border-radius: 2px
+  transition: background-color .3s ease-in-out
+.extra-feature__checkbox:checked + .extra-feature__custom-checkbox
+  background-color: #ECCF94
+  border-color: #ECCF94
+  &::before, &::after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 8px
+    height: 1px
+    border-radius: 1px
+    background-color: #191919
+    transform: translate(-50%,-50%)
+  &::after 
+    transform: translate(-50%,-50%) rotate(90deg)
+
+
+.form__bottom
+  display: flex
+  justify-content: space-between 
+.form__cost-title 
+  margin-bottom: 19px
+  font-size: 12px
+  font-weight: 500
+  letter-spacing: 0.135em
+  color: rgba(255, 255, 255, 0.5)
+  text-transform: uppercase
+.form__cost-value 
+  font-size: 36px
+  font-weight: 300
+  letter-spacing: 0.05em
+  color: #FFCF7A
+.form__submit 
+  height: fit-content
+  padding: 21px 56px
+  border-radius: 1px
+  color: #121212
+  font-size: 18px
+  font-weight: 500
+  line-height: 1
+  text-align: center
+  background: url('../images/btn-light.svg') no-repeat 100%/cover #ECCF94
+
+
+ 
+
+.footer
+  padding-top: 80px
+.footer__container
+.footer__title 
+  margin-bottom: 90px
+  background: linear-gradient(183.91deg, #FFFFFF 66.36%, rgba(255, 255, 255, 0) 95.46%)
+  -webkit-background-clip: text
+  background-clip: text 
+.footer__contacts 
+  display: grid
+  grid-template-columns: 160px 350px 285px
+  row-gap: 40px
+  justify-content: space-between
+  margin-bottom: 70px
+.footer-contact 
+.footer-contact__title 
+  margin-bottom: 15px
+  font-size: 14px
+  font-weight: 300
+  color: #949494
+.footer-contact__value 
+  font-size: 22px
+  font-weight: 300
+  line-height: 1.5
+.footer-contact__value_mail
+  color: #FFCF7A
+.footer-contact__value_phone
+  font-size: 36px
+  font-weight: 250
+.footer__contacts__contact-manager
+  align-self: start
+  width: fit-content
+  padding: 15px 29px
+  border: 1px solid #CEB787
+  border-radius: 2px
+  font-size: 18px
+  font-weight: 500
+  line-height: 30px
+
+.footer__bottom 
+  padding: 42px 0
+  border-top: 1px solid #232323
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.05em
+  color: #6D6D6D
+.footer__bottom-container
+  display: flex
+  align-items: center
+.footer__brand
+  margin-right: 110px
+  font-size: 14px
+.footer__years 
+  margin-right: 47px
+.footer__legal-name 
+  margin-right: auto
+
+
