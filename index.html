@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,7 @@
   <meta name="keywords" content="камины, биокамины, автоматические биокамины, Elite Fire">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1a1a">
   <title>Elite Fire</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 
@@ -26,10 +27,10 @@
       <span class="header__description">Автоматические<br>биокамины</span>
       <nav class="header__nav header-nav">
         <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="" class="header-nav__link">Продукция</a></li>
-          <li class="header-nav__item"><a href="" class="header-nav__link">Конструктор</a></li>
-          <li class="header-nav__item"><a href="" class="header-nav__link">Опыт</a></li>
-          <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Продукция</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Конструктор</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Опыт</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
         </ul>
       </nav>
       <button class="header__call-btn">
@@ -110,9 +111,7 @@
 
     <section class="smart">
       <div class="container smart__container">
-        <h2 class="section-title smart__title">
-          <pre>Умный камин          очень умный</pre>
-        </h2>
+        <h2 class="section-title smart__title">Умный камин<span class="smart__title-space"></span>очень умный</h2>
         <p class="smart__subtitle">Даже если у Вас нет своего решения по умному дому.<br>
           Мы отлично ладим с Яндекс.Алиса и Mi Home.</p>
       </div>
@@ -126,7 +125,7 @@
         <div class="properties__basic-properties basic-properties">
           <h3 class="basic-properties__title">Топливный блок</h3>
           <figure class="basic-properties__faceplate faceplate">
-            <figcaption class="faceplate_description">Лицевая панель из жаропрочной нержавеющей стали толщиной 5 мм
+            <figcaption class="faceplate__description">Лицевая панель из жаропрочной нержавеющей стали толщиной 5 мм
             </figcaption>
             <img src="./images/properties/faceplate.webp" alt="Лицевая панель" class="faceplate__img">
           </figure>
@@ -217,7 +216,7 @@
     <section class="catalog">
       <div class="container catalog__container">
         <h3 class="catalog__title">Получите каталог с моделями и ценами на всю нашу продукцию</h3>
-        <a href="" class="catalog__link">Получить каталог!</a>
+        <a href="#" class="catalog__link">Получить каталог!</a>
       </div>
     </section>
 
@@ -270,10 +269,10 @@
                 <input class="range-length__input" id="range-input" name="length" type="range" min="0.5" max="10"
                   step="0.5" value="6.5">
                 0.5 м
-                <div class="range-length__custom-range custom-range" id="range-line">
-                  <div class="custom-range__filled" id="range-filled"></div>
-                  <div class="custom-range__thumb" id="range-thumb"></div>
-                </div>
+                <span class="range-length__custom-range custom-range" id="range-line">
+                  <span class="custom-range__filled" id="range-filled"></span>
+                  <span class="custom-range__thumb" id="range-thumb"></span>
+                </span>
                 10 м
               </label>
             </fieldset>
@@ -316,35 +315,35 @@
               <div class="customization-form__extra-features-inner">
                 <label class="extra-feature">Защита от детей
                   <input class="extra-feature__checkbox" type="checkbox" checked>
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
                 <label class="extra-feature">Защита от детей
                   <input class="extra-feature__checkbox" type="checkbox">
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
                 <label class="extra-feature">Wi-Fi
                   <input class="extra-feature__checkbox" type="checkbox">
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
                 <label class="extra-feature">Wi-Fi
                   <input class="extra-feature__checkbox" type="checkbox">
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
                 <label class="extra-feature">Защита от детей
                   <input class="extra-feature__checkbox" type="checkbox">
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
                 <label class="extra-feature">Защита от детей
                   <input class="extra-feature__checkbox" type="checkbox" checked>
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
                 <label class="extra-feature">Wi-Fi
                   <input class="extra-feature__checkbox" type="checkbox">
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
                 <label class="extra-feature">Wi-Fi
                   <input class="extra-feature__checkbox" type="checkbox">
-                  <div class="extra-feature__custom-checkbox"></div>
+                  <span class="extra-feature__custom-checkbox"></span>
                 </label>
               </div>
             </fieldset>
@@ -400,7 +399,7 @@
       <div class="container footer__bottom-container">
         <h3 class="brand footer__brand">Elite Fire</h3>
         <span class="footer__years">2020-2021</span><span class="footer__legal-name">ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”</span><a
-          href="" class="footer__user-agreement">Пользовательское соглашение</a>
+          href="#" class="footer__user-agreement">Пользовательское соглашение</a>
       </div>
     </div>
   </footer>

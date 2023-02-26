@@ -30,36 +30,36 @@
 
     //Mouse
     rangeThumb.addEventListener('mousedown', () => {
-      document.addEventListener('mousemove', onMouseRangeInteraction);
+      document.addEventListener('mousemove', onPointerInteraction, {passive: true});
     });
     document.addEventListener('mouseup', () => {
-      document.removeEventListener('mousemove', onMouseRangeInteraction);
+      document.removeEventListener('mousemove', onPointerInteraction);
     });
-    rangeLine.addEventListener('mousedown', onMouseRangeInteraction);
+    rangeLine.addEventListener('mousedown', onPointerInteraction);
     //Touch
     rangeThumb.addEventListener('touchstart', () => {
-      document.addEventListener('touchmove', onMouseRangeInteraction);
+      document.addEventListener('touchmove', onPointerInteraction, {passive: true});
     });
     document.addEventListener('touchend', () => {
-      document.removeEventListener('touchmove', onMouseRangeInteraction);
+      document.removeEventListener('touchmove', onPointerInteraction);
     });
 
-    function onMouseRangeInteraction(e) {
-      const mouseX = e.clientX || e.targetTouches[0].clientX;
+    function onPointerInteraction(e) {
+      const pointerX = e.clientX || e.targetTouches[0].clientX;
       const {x: startX, width} = rangeLine.getBoundingClientRect();
 
-      let fraction = (mouseX - startX) / width;
+      let fraction = (pointerX - startX) / width;
       fraction = (fraction < 0) ? 0 : (fraction > 1) ? 1 : fraction;
 
       let newValue = min + interval * fraction;
       newValue = roundNumberTo(newValue, step);
 
       rangeInput.value = newValue;
-
       renderRangeValue(newValue);
     }
     function renderRangeValue(value) {
       const fraction = (value - min) / interval;
+
       rangeThumb.style.left = fraction * 100 + '%';
       rangeFilled.style.width = fraction * 100 + '%';
 
